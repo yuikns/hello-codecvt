@@ -6,8 +6,8 @@ CP               := @cp
 MV               := @mv
 DEL              := @rm -rf
 
-LIBS             := -ldl -lpthread  -lm #-L lib/ 
-INFLAGS          := -I include/
+LIBS             := #-ldl -lpthread  -lm -L lib/
+INFLAGS          := #-I include/
 
 CFLAGS            := -Wall    ${INFLAGS} -std=c99
 GNUFLAGS          := -Wall    ${INFLAGS} -std=gnu99
